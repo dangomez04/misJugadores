@@ -1,0 +1,22 @@
+CRITICAL - 2023-12-05 12:13:00 --> Undefined index: liga
+in APPPATH/Views/index.php on line 11.
+ 1 APPPATH/Views/index.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/html/misJugadores/app/Views/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(18): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 12:29:40 --> Undefined index: imagen
+in APPPATH/Views/index.php on line 18.
+ 1 APPPATH/Views/index.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/html/misJugadores/app/Views/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(18): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

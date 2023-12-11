@@ -1,0 +1,96 @@
+CRITICAL - 2023-12-11 08:41:53 --> Undefined index: imagenLiga
+in APPPATH/Views/index.php on line 27.
+ 1 APPPATH/Views/index.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/html/misJugadores/app/Views/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(18): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 09:00:06 --> Undefined variable: ligas
+in APPPATH/Views/index.php on line 8.
+ 1 APPPATH/Views/index.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/html/misJugadores/app/Views/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(36): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->delete()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-11 09:04:33 --> mysqli_sql_exception: Unknown column 'liga.id' in 'on clause' in /var/www/html/misJugadores/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/misJugadores/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /var/www/html/misJugadores/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/misJugadores/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/misJugadores/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/misJugadores/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/misJugadores/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/misJugadores/app/Models/playerModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/misJugadores/app/Controllers/Home.php(15): App\Models\playerModel->getPlayers()
+#8 /var/www/html/misJugadores/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#9 /var/www/html/misJugadores/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/misJugadores/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/misJugadores/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-11 09:04:33 --> Unknown column 'liga.id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/playerModel.php(15): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Home.php(15): App\Models\playerModel->getPlayers()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 09:05:34 --> Undefined index: id
+in APPPATH/Views/index.php on line 11.
+ 1 APPPATH/Views/index.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/html/misJugadores/app/Views/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(19): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 09:06:05 --> Undefined variable: ligas
+in APPPATH/Views/index.php on line 8.
+ 1 APPPATH/Views/index.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/html/misJugadores/app/Views/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(36): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->delete()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 09:34:33 --> Undefined variable: ligas
+in APPPATH/Views/index.php on line 8.
+ 1 APPPATH/Views/index.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/html/misJugadores/app/Views/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(36): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->delete()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-11 10:44:29 --> CSRF token verified.
+CRITICAL - 2023-12-11 10:44:29 --> Allowed fields must be specified for model: "App\Models\PlayerModel"
+in SYSTEMPATH/Model.php on line 736.
+ 1 SYSTEMPATH/Model.php(736): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
+ 2 SYSTEMPATH/BaseModel.php(763): CodeIgniter\Model->doProtectFieldsForInsert()
+ 3 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 4 SYSTEMPATH/BaseModel.php(698): CodeIgniter\Model->insert()
+ 5 APPPATH/Controllers/Home.php(32): CodeIgniter\BaseModel->save()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->create()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-11 10:47:07 --> CSRF token verified.
+INFO - 2023-12-11 10:48:22 --> CSRF token verified.
+INFO - 2023-12-11 10:49:02 --> CSRF token verified.
